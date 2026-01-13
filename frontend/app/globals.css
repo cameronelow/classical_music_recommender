@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Actor&display=swap');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  font-family: 'Actor', sans-serif;
+}
+
+body {
+  color: #1A3263;
+  background: linear-gradient(to bottom, #1A3263 0%, #1A3263 60%, #FAB95B 100%);
+  min-height: 100vh;
+}

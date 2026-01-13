@@ -1,0 +1,68 @@
+# Data files
+data/raw/
+*.tar.bz2
+*.sql
+
+# Environment files
+.env
+.env.*
+!.env.example
+backend/.env
+backend/.env.*
+!backend/.env.example
+frontend/.env
+frontend/.env.*
+!frontend/.env.example
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+venv/
+*.egg-info/
+dist/
+build/
+
+# Node
+node_modules/
+frontend/node_modules/
+frontend/.next/
+frontend/.turbo/
+frontend/out/
+
+# macOS
+.DS_Store
+.cache/
+.AppleDouble
+.LSOverride
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+.claude/
+
+# Misc
+.spotify_cache
+
+# Documentation & Design Files
+*.md
+!README.md
+design/
+docs/design/
+*.fig
+*.sketch
+
+# Backend Cache & Logs
+backend/cache/
+backend/*.log
+*.log
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/

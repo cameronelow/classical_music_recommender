@@ -1,0 +1,295 @@
+/* Share Button Styles - matches app design system */
+
+.shareButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px 24px;
+  background-color: #1A3263; /* Primary dark blue from design */
+  color: #E8E2DB; /* Light cream text */
+  border: 2px solid transparent;
+  border-radius: 8px;
+  font-family: 'Actor', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  outline: none;
+  width: 100%; /* Full width to match other buttons */
+}
+
+.shareButton:hover {
+  background-color: #2A4580;
+  border-color: #C4A87C; /* Gold accent */
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(196, 168, 124, 0.3);
+}
+
+.shareButton:active {
+  transform: translateY(0);
+}
+
+.shareButton:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.shareButton svg {
+  flex-shrink: 0;
+}
+
+/* Modal Overlay */
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.85);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  padding: 20px;
+  animation: fadeIn 0.2s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Modal Container */
+.modal {
+  background: linear-gradient(135deg, #1A1A1A 0%, #2D2D2D 100%);
+  border-radius: 16px;
+  border: 2px solid #C4A87C;
+  max-width: 600px;
+  width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+  animation: slideUp 0.3s ease;
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Modal Header */
+.modalHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 24px 16px;
+  border-bottom: 1px solid rgba(196, 168, 124, 0.2);
+}
+
+.modalHeader h3 {
+  margin: 0;
+  font-family: 'Actor', sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  color: #C4A87C; /* Gold */
+}
+
+.closeButton {
+  background: transparent;
+  border: none;
+  color: #E8E2DB;
+  cursor: pointer;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+}
+
+.closeButton:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Share Card Preview */
+.sharePreview {
+  padding: 24px;
+  display: flex;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.sharePreview img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(196, 168, 124, 0.3);
+}
+
+/* Share Options Grid */
+.shareOptions {
+  padding: 24px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+
+@media (max-width: 480px) {
+  .shareOptions {
+    grid-template-columns: 1fr;
+  }
+}
+
+.shareOption {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px;
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(196, 168, 124, 0.3);
+  border-radius: 8px;
+  color: #E8E2DB;
+  font-family: 'Actor', sans-serif;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: left;
+}
+
+.shareOption:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-color: #C4A87C;
+  transform: translateY(-2px);
+}
+
+.shareOption:active {
+  transform: translateY(0);
+}
+
+.emoji {
+  font-size: 24px;
+  flex-shrink: 0;
+  width: 28px;
+  text-align: center;
+}
+
+/* Platform-specific colors */
+.shareOption.twitter:hover {
+  background-color: rgba(29, 161, 242, 0.15);
+  border-color: #1DA1F2;
+}
+
+.shareOption.facebook:hover {
+  background-color: rgba(24, 119, 242, 0.15);
+  border-color: #1877F2;
+}
+
+.shareOption.instagram:hover {
+  background-color: rgba(225, 48, 108, 0.15);
+  border-color: #E1306C;
+}
+
+.shareOption.download:hover {
+  background-color: rgba(76, 175, 80, 0.15);
+  border-color: #4CAF50;
+}
+
+.shareOption.copy:hover {
+  background-color: rgba(196, 168, 124, 0.15);
+  border-color: #C4A87C;
+}
+
+/* Responsive Design */
+@media (max-width: 640px) {
+  .modal {
+    max-width: 100%;
+    border-radius: 12px;
+    margin: 0 8px;
+  }
+
+  .modalHeader h3 {
+    font-size: 20px;
+  }
+
+  .sharePreview {
+    padding: 16px;
+  }
+
+  .shareOptions {
+    padding: 16px;
+  }
+
+  .shareOption {
+    font-size: 14px;
+    padding: 12px;
+  }
+
+  .emoji {
+    font-size: 20px;
+    width: 24px;
+  }
+}
+
+/* Loading State */
+.shareButton:disabled svg {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Success State for Copy Button */
+.shareOption.copy svg {
+  color: #4CAF50;
+}
+
+/* Accessibility */
+.shareButton:focus-visible,
+.closeButton:focus-visible,
+.shareOption:focus-visible {
+  outline: 2px solid #C4A87C;
+  outline-offset: 2px;
+}
+
+/* Smooth scrolling for modal */
+.modal {
+  scrollbar-width: thin;
+  scrollbar-color: #C4A87C rgba(255, 255, 255, 0.1);
+}
+
+.modal::-webkit-scrollbar {
+  width: 8px;
+}
+
+.modal::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 4px;
+}
+
+.modal::-webkit-scrollbar-thumb {
+  background: #C4A87C;
+  border-radius: 4px;
+}
+
+.modal::-webkit-scrollbar-thumb:hover {
+  background: #D4B88C;
+}

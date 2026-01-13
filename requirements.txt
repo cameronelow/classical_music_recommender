@@ -1,0 +1,42 @@
+# ETL Extract Dependencies
+musicbrainzngs>=0.7.1
+python-dotenv>=1.0.0
+pydantic>=2.0.0
+pandas>=2.0.0
+pyarrow>=14.0.0
+tqdm>=4.66.0
+
+# Recommendation System Dependencies
+numpy>=1.24.0
+scikit-learn>=1.3.0
+scipy>=1.11.0
+
+# Semantic Search Dependencies
+sentence-transformers>=2.2.0
+torch>=2.0.0
+
+# Testing
+pytest>=7.4.0
+pytest-cov>=4.1.0
+pytest-asyncio>=0.21.0
+
+# Optional: For scaling to large datasets
+# faiss-cpu>=1.7.4
+
+# Logging and monitoring
+# prometheus-client>=0.17.0
+
+# Auto-tagging system
+anthropic>=0.40.0
+rich>=13.0.0
+typer>=0.9.0
+
+# Share Card Generation (Social Media)
+Pillow>=10.0.0
+requests>=2.31.0
+
+# Backend API
+fastapi>=0.104.0
+uvicorn>=0.24.0
+gunicorn>=21.2.0
+supabase>=2.3.0

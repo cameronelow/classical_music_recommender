@@ -1,0 +1,43 @@
+composer_id,name,sort_name,birth_year,death_year,country,period,annotation,mb_tags,total_works_count
+ad79836d-9849-44df-8789-180bbc823f3c,Antonio Vivaldi,"Vivaldi, Antonio",1678,1741,IT,Baroque,See [http://www.classical.net/music/composer/works/vivaldi/index.php|Classical Net] for a cross-reference of Vivaldi’s works in different numbering systems.,[],25
+be50643c-0377-4968-b48c-47e06b2e2a3b,Claude Debussy,"Debussy, Claude",1862,1918,FR,Romantic,,[],25
+2cd475bb-1abd-40c4-9904-6d4b691c752c,Franz Liszt,"Liszt, Franz",1811,1886,HU,Romantic,,[],25
+f91e3a88-24ee-4563-8963-fab73d2765ed,Franz Schubert,"Schubert, Franz",1797,1828,AT,Classical,,[],25
+09ff1fe8-d61c-4b98-bb82-18487c74d7b7,Fryderyk Chopin,"Chopin, Fryderyk",1810,1849,PL,Romantic,,[],25
+27870d47-bb98-42d1-bf2b-c7e972e6befc,George Frideric Handel,"Handel, George Frideric",1685,1759,GB,Baroque,"On 22 January 1727 ''Georg Friedrich Händel'' became a naturalised subject of the British crown with the legally accepted name ''George Frideric Handel''.
+
+'''FIXME:'''
+Due to a recent edit ([http://musicbrainz.org/edit/22578603|link]) that changed his name from ''Georg Friedrich Händel'' to ''George Frideric Handel'' (no artist credits renamed), majority of the releases filed under this artist are still left with the old artist name (Georg Friedrich Händel). It might help to change the artist credits to the new one, especially those releases that use ''Handel'' or ''George Frideric Handel'' on cover art. (Majority of the releases do use the English name).",[],25
+f1bedf1f-4445-4651-9c35-f4a3f3860a13,Giuseppe Verdi,"Verdi, Giuseppe",1813,1901,IT,Romantic,,[],25
+24f1766e-9635-4d58-a4d4-9413f9f98a4c,Johann Sebastian Bach,"Bach, Johann Sebastian",1685,1750,DE,Baroque,"For the BWV catalogue of Bach's works, see [series:d977f7fd-96c9-4e3e-83b5-eb484a9e6582|Bach-Werke-Verzeichnis].
+
+=== Major series / box sets ===
+
+    * [http://wiki.musicbrainz.org/User:HumHumXX/Bach_on_TELDEC|→ Bach on TELDEC] (wiki) 
+
+    * [release-group:eb9f2982-c203-4f36-a45b-9ea55f5823b8|''Die kompletten Werke von Johann Sebastian Bach''] (Hänssler, 2000/2010; Master Music, 2004)
+
+    * [release-group:ad263ed1-3e94-3fa6-88bf-63d575611bb2|''Bach Edition''] (Brilliant Classics, 2001/2006/2010)
+
+    * ''The Masterworks'' (Brilliant Classics, 2004/2008) (ext ref: [http://www.allmusic.com/album/bach-the-masterworks-mw0001387268|1] / [http://www.allmusic.com/album/bach-the-masterworks-mw0001945560|2])
+
+    * ''Premium Edition'' (Am@do Classics, 2007?) (ext ref: [http://www.allmusic.com/album/johann-sebastian-bach-premium-edition-mw0001867557|1]; [http://www.amazon.com/gp/product/B000XCZC1C|2.1] or [http://www.amazon.com/gp/product/B000IFRXV6|2.2]) ([http://wiki.musicbrainz.org/User:HumHumXX/Bach_-_Premium_Edition|wiki] tracklist dump)
+
+There seems to have been another major series (or set) (69xCD; + [http://www.amazon.com/gp/product/B00001NTI2|2xCD sampler]) by ""harmonia mundi"", evidence of which is rare.",[],25
+c70d12a2-24fe-4f83-a6e6-57d84f8efb51,Johannes Brahms,"Brahms, Johannes",1833,1897,DE,Romantic,,[],25
+1f9df192-a621-4f54-8850-2c5373b7eac9,Ludwig van Beethoven,"Beethoven, Ludwig van",1770,1827,DE,Classical,,[],25
+5f2375e8-67d5-410c-9bdb-6793a7c0d62b,Adrian Tchaikovsky,"Tchaikovsky, Adrian",1972,,GB,Contemporary,,[],5
+eefd7c1e-abcf-4ccc-ba60-0fd435c9061f,Richard Wagner,"Wagner, Richard",1813,1883,DE,Romantic,,[],25
+3cd3882c-00f8-4362-a0c2-ad89ed248533,Robert Schumann,"Schumann, Robert",1810,1856,DE,Romantic,,[],25
+b972f589-fb0e-474e-b64a-803b0364fa75,Wolfgang Amadeus Mozart,"Mozart, Wolfgang Amadeus",1756,1791,AT,Classical,"'''Additional Notes:'''
+Born as: Joannes Chrisostomos Wolfgang Gottlieb Mozart
+Baptized as: Joannes Chrysostomus Wolfgangus Theophilus Mozart
+
+Mozart himself preferred the Italian-ized and French-ified versions of Gottlieb: Amadeo, Amadè and Amadé
+
+Mozart actually only ever used the name as ""Amadeus"" three times among his letters and compositions, among at least 77 different variations of his name used throughout his lifetime.
+
+
+Help us organize Philips' Complete Mozart Edition by finding any missing or new albums you add/import to the [http://wiki.musicbrainz.org/Series/MozartCompletePhilips|Series/Mozart Complete Philips] wiki page.
+
+You may want to consult [http://wiki.musicbrainz.org/CSGStandard/Mozart|the CSG worklist] for guidance.",[],25

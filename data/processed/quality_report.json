@@ -1,0 +1,56 @@
+{
+  "timestamp": "2025-12-27T16:01:53.751424",
+  "input_dir": "/Users/Cameron/Desktop/classical_music_recommender/data/raw",
+  "output_dir": "/Users/Cameron/Desktop/classical_music_recommender/data/processed",
+  "artists": null,
+  "metrics": {
+    "counts": {
+      "composers": 2,
+      "works": 150,
+      "recordings": 2247
+    },
+    "completeness": {
+      "composers": {
+        "with_birth_year": 2,
+        "with_death_year": 2,
+        "with_period": 2,
+        "with_tags": 2,
+        "birth_year_pct": 100.0,
+        "death_year_pct": 100.0,
+        "period_pct": 100.0,
+        "tags_pct": 100.0
+      },
+      "works": {
+        "with_catalog_number": 18,
+        "with_work_type": 29,
+        "with_key": 11,
+        "with_tags": 22,
+        "with_recordings": 50,
+        "catalog_number_pct": 12.0,
+        "work_type_pct": 19.33,
+        "key_pct": 7.33,
+        "tags_pct": 14.67,
+        "recordings_pct": 33.33
+      },
+      "recordings": {
+        "with_audio_features": 0,
+        "with_popularity": 2247,
+        "audio_features_pct": 0.0,
+        "popularity_pct": 100.0
+      }
+    },
+    "data_quality": {
+      "duplicate_composers": 0,
+      "duplicate_works": 6,
+      "duplicate_recordings": 0,
+      "missing_composer_ids": 0,
+      "missing_work_ids": 0
+    },
+    "issues": {
+      "errors": [],
+      "warnings": [
+        "Found 6 duplicate work IDs"
+      ]
+    }
+  }
+}
