@@ -24,8 +24,8 @@ load_dotenv(env_path)
 sys.path.insert(0, str(Path(__file__).parent.parent))
 
 from recommender.service import initialize_service, get_service
-from share_api import router as share_router
-from rate_limiter import RateLimitMiddleware, create_endpoint_limiter
+from backend.share_api import router as share_router
+from backend.rate_limiter import RateLimitMiddleware, create_endpoint_limiter
 
 
 # Security Headers Middleware
