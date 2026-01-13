@@ -63,7 +63,7 @@ function RecommendContent() {
     }
 
     fetchRecommendation()
-  }, [vibe, router])
+  }, [vibe])
 
   const handleSave = async () => {
     if (!recommendation || !user) return
