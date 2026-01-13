@@ -8,31 +8,34 @@ RUN apt-get update && apt-get install -y \
     g++ \
     && rm -rf /var/lib/apt/lists/*
 
-# Copy requirements from root (shared dependencies)
-COPY ../requirements.txt /app/requirements.txt
+# Copy requirements from root (we'll copy from parent context)
+COPY requirements.txt /app/requirements.txt
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Install production ASGI server
 RUN pip install --no-cache-dir gunicorn
 
+# Copy data directory (needed for recommender engine)
+COPY data /app/data
+
+# Copy recommender module (needed for import)
+COPY recommender /app/recommender
+
 # Copy backend application code
-COPY . /app/
+COPY backend /app/backend
 
-# Copy data directory from parent (needed for recommender engine)
-COPY ../data /app/data
-
-# Copy recommender module from parent (needed for import)
-COPY ../recommender /app/recommender
+# Set working directory to backend
+WORKDIR /app/backend
 
 # Create cache directory
-RUN mkdir -p /app/cache
+RUN mkdir -p /app/backend/cache
 
 # Expose port
 EXPOSE 8000
 
 # Health check
 HEALTHCHECK --interval=30s --timeout=10s --start-period=40s --retries=3 \
-  CMD python -c "import requests; requests.get('http://localhost:8000/api/health')"
+  CMD python -c "import requests; requests.get('http://localhost:8000/api/health')" || exit 1
 
 # Production startup command with Gunicorn + Uvicorn workers
 # 4 workers for production, timeout increased for ML model loading
