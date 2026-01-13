@@ -23,11 +23,12 @@ COPY backend ./backend
 # Set Python path for imports
 ENV PYTHONPATH=/app
 
-# Set working directory to backend
-WORKDIR /app/backend
+# Stay in /app as working directory so relative paths work
+# The api.py is in backend/, so we'll specify it in CMD
+WORKDIR /app
 
-# Create cache directory
-RUN mkdir -p cache
+# Create cache directory in backend
+RUN mkdir -p backend/cache
 
 # Expose port
 EXPOSE 8000
@@ -38,4 +39,5 @@ HEALTHCHECK --interval=30s --timeout=10s --start-period=40s --retries=3 \
 
 # Start gunicorn with uvicorn workers
 # Use only 1 worker for Render free/starter tier to reduce memory usage
-CMD ["gunicorn", "api:app", "--workers", "1", "--worker-class", "uvicorn.workers.UvicornWorker", "--bind", "0.0.0.0:8000", "--timeout", "120", "--max-requests", "1000", "--max-requests-jitter", "50"]
+# Run from /app directory and specify backend.api:app module path
+CMD ["gunicorn", "backend.api:app", "--workers", "1", "--worker-class", "uvicorn.workers.UvicornWorker", "--bind", "0.0.0.0:8000", "--timeout", "120", "--max-requests", "1000", "--max-requests-jitter", "50"]
