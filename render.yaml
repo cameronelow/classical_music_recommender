@@ -3,7 +3,6 @@ services:
     name: classical-music-api
     runtime: docker
     dockerfilePath: ./Dockerfile
-    dockerContext: ./
     envVars:
       - key: ENVIRONMENT
         value: production
