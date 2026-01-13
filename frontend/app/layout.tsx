@@ -8,12 +8,12 @@ import WebVitals from '@/components/WebVitals'
 const actor = Actor({ weight: '400', subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'ESPRESSIVO - Classical Music Recommender',
+  title: 'CLASSICAL VIBE - Classical Music Recommender',
   description: 'Discover classical music tailored to your vibe with AI-powered recommendations',
   keywords: ['classical music', 'music recommendation', 'AI', 'mood-based music'],
-  authors: [{ name: 'ESPRESSIVO' }],
+  authors: [{ name: 'CLASSICAL VIBE' }],
   openGraph: {
-    title: 'ESPRESSIVO - Classical Music Recommender',
+    title: 'CLASSICAL VIBE - Classical Music Recommender',
     description: 'Discover classical music tailored to your vibe',
     type: 'website',
   },

@@ -29,7 +29,7 @@ function ShareContent() {
     }
   }, [title, composer, vibe, router])
 
-  const shareText = `My Classical Vibe Today...\n\n"${title}" by ${composer}\n\nVibe: ${vibe}\n\nDiscover your classical music match at Espressivo`
+  const shareText = `My Classical Vibe Today...\n\n"${title}" by ${composer}\n\nVibe: ${vibe}\n\nDiscover your classical music match at Classical Vibe`
   const shareUrl = typeof window !== 'undefined' ? window.location.origin : ''
 
   const handleShare = (platform: string) => {

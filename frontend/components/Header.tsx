@@ -33,9 +33,9 @@ export default function Header() {
         <Link
           href="/"
           className="text-light-cream text-hero transition-opacity hover:opacity-90"
-          aria-label="Espressivo - Home"
+          aria-label="Classical Vibe - Home"
         >
-          ESPRESSIVO
+          CLASSICAL VIBE
         </Link>
 
         <div className="flex gap-3 absolute right-0">

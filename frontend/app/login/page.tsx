@@ -34,7 +34,7 @@ function LoginForm() {
       <header className="w-full py-2 px-16">
         <div className="w-full flex justify-center items-center relative min-h-header">
           <Link href="/" className="text-light-cream text-hero transition-opacity hover:opacity-90">
-            ESPRESSIVO
+            CLASSICAL VIBE
           </Link>
           <div className="flex gap-3 absolute right-0">
             <Link href="/login">

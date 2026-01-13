@@ -1,4 +1,4 @@
-# Espressivo: A Classical Music Recommender
+# Classical Vibe: A Classical Music Recommender
 
 A web application to discover classical music pieces based on your mood.
 

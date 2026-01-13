@@ -6,7 +6,7 @@ test.describe('Landing Page', () => {
   })
 
   test('has correct title', async ({ page }) => {
-    await expect(page).toHaveTitle(/ESPRESSIVO/)
+    await expect(page).toHaveTitle(/CLASSICAL VIBE/)
   })
 
   test('displays main heading', async ({ page }) => {
@@ -55,7 +55,7 @@ test.describe('Landing Page', () => {
   })
 
   test('shows header with navigation', async ({ page }) => {
-    const logo = page.getByText('ESPRESSIVO').first()
+    const logo = page.getByText('CLASSICAL VIBE').first()
     const loginButton = page.getByRole('link', { name: /Log In/i })
     const signupButton = page.getByRole('link', { name: /Sign Up/i })
 
