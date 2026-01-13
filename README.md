@@ -1,6 +1,6 @@
 # Classical Music Recommender
 
-A beautiful, intelligent web application to discover classical music pieces based on your mood and vibe.
+A web application to discover classical music pieces based on your mood.
 
 > *Note: "Classical" here goes beyond the classical period and extends to other eras and styles (Baroque, Romantic, Modern, etc.)*
 
@@ -10,8 +10,8 @@ A beautiful, intelligent web application to discover classical music pieces base
 - 🤖 **AI-Powered Recommendations**: Semantic search using advanced NLP
 - 💾 **Save Favorites**: Create your personal collection of discoveries
 - 🎨 **Beautiful UI**: Pixel-perfect design with gradient backgrounds
-- 📱 **Fully Responsive**: Works seamlessly on desktop, tablet, and mobile
-- 🔐 **User Accounts**: Sign up to save and track your musical journey
+- 📱 **Fully Responsive**: Works seamlessly on desktop and mobile
+- 🔐 **User Accounts**: Sign up to save your personalized recs
 
 ## Data Source
 
