@@ -15,7 +15,7 @@ import os
 # Add parent directory to import recommender
 sys.path.insert(0, str(Path(__file__).parent.parent))
 
-from share_card_generator import ShareCardGenerator
+from backend.share_card_generator import ShareCardGenerator
 from recommender.service import get_service
 
 logger = logging.getLogger(__name__)
