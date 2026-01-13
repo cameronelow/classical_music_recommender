@@ -10,6 +10,9 @@ RUN apt-get update && apt-get install -y \
 
 # Copy and install requirements
 COPY requirements.txt .
+# Install PyTorch CPU-only version first (much smaller, reduces memory)
+RUN pip install --no-cache-dir torch --index-url https://download.pytorch.org/whl/cpu
+# Install remaining requirements
 RUN pip install --no-cache-dir -r requirements.txt gunicorn
 
 # Copy all necessary directories
