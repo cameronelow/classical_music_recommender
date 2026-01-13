@@ -8,27 +8,30 @@ RUN apt-get update && apt-get install -y \
     g++ \
     && rm -rf /var/lib/apt/lists/*
 
-# Copy requirements from root (we'll copy from parent context)
-COPY requirements.txt /app/requirements.txt
+# Copy requirements from root
+COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Install production ASGI server
 RUN pip install --no-cache-dir gunicorn
 
 # Copy data directory (needed for recommender engine)
-COPY data /app/data
+COPY data ./data
 
-# Copy recommender module (needed for import)
-COPY recommender /app/recommender
+# Copy recommender module (needed for imports)
+COPY recommender ./recommender
 
-# Copy backend application code
-COPY backend /app/backend
+# Copy backend code
+COPY backend ./backend
 
-# Set working directory to backend
+# Set Python path to include parent directory for imports
+ENV PYTHONPATH=/app
+
+# Set working directory to backend where api.py lives
 WORKDIR /app/backend
 
 # Create cache directory
-RUN mkdir -p /app/backend/cache
+RUN mkdir -p cache
 
 # Expose port
 EXPOSE 8000
