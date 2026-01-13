@@ -8,7 +8,7 @@ from typing import Dict, Optional
 import io
 import requests
 from pathlib import Path
-from design_tokens import DESIGN_TOKENS, hex_to_rgb, interpolate_color
+from backend.design_tokens import DESIGN_TOKENS, hex_to_rgb, interpolate_color
 
 
 class ShareCardGenerator:
