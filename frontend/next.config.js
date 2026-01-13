@@ -44,7 +44,7 @@ const nextConfig = {
               "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com",
               "img-src 'self' data: https: blob:",
               "font-src 'self' data: https://fonts.gstatic.com",
-              "connect-src 'self' http://localhost:8000 http://127.0.0.1:8000 https://*.supabase.co wss://*.supabase.co https://www.google-analytics.com",
+              "connect-src 'self' http://localhost:8000 http://127.0.0.1:8000 https://espressivo.onrender.com https://*.supabase.co wss://*.supabase.co https://www.google-analytics.com",
               "frame-src 'self' https://open.spotify.com",
               "object-src 'none'",
               "base-uri 'self'",
