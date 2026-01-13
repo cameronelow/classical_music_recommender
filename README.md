@@ -1,4 +1,4 @@
-# Classical Music Recommender
+# Espressivo: A Classical Music Recommender
 
 A web application to discover classical music pieces based on your mood.
 
