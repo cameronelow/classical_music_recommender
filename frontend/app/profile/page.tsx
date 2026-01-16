@@ -28,7 +28,7 @@ export default function ProfilePage() {
 
       <main className="flex-1 flex items-center justify-center px-4">
         <Card className="w-full max-w-md">
-          <h1 className="text-display font-bold text-dark-blue mb-8 text-center">
+          <h1 className="text-2xl sm:text-3xl md:text-display font-bold text-dark-blue mb-8 text-center">
             Hi, {user?.name || 'there'}!
           </h1>
 

@@ -80,11 +80,12 @@ export default function EditProfilePage() {
       <div className="flex-1 flex items-center justify-center px-4 py-12">
         <div className="w-full max-w-2xl space-y-6">
           <Card>
-            <div className="flex items-center justify-between mb-6">
-              <h1 className="text-3xl font-bold text-dark-blue">Edit Profile</h1>
+            <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mb-6">
+              <h1 className="text-2xl sm:text-3xl font-bold text-dark-blue">Edit Profile</h1>
               <Button
                 variant="secondary"
                 onClick={() => router.push('/profile')}
+                className="w-full sm:w-auto"
               >
                 Back to Profile
               </Button>

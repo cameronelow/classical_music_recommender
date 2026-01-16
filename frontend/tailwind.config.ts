@@ -18,15 +18,18 @@ const config: Config = {
         sans: ['Actor', 'sans-serif'],
       },
       fontSize: {
-        // Typography scale
-        'hero': ['4.625rem', { lineHeight: '1.1', letterSpacing: '0.05em' }], // 74px
-        'display': ['3rem', { lineHeight: '1.2', letterSpacing: '0.02em' }], // 48px
+        // Typography scale with responsive defaults
+        'hero': ['4.625rem', { lineHeight: '1.1', letterSpacing: '0.05em' }], // 74px (desktop)
+        'display': ['3rem', { lineHeight: '1.2', letterSpacing: '0.02em' }], // 48px (desktop)
         'heading-xl': ['2rem', { lineHeight: '1.3' }], // 32px
         'heading-lg': ['1.5rem', { lineHeight: '1.4' }], // 24px
         'heading-md': ['1.25rem', { lineHeight: '1.4' }], // 20px
         'body-lg': ['1.125rem', { lineHeight: '1.5' }], // 18px
         'body': ['1rem', { lineHeight: '1.5' }], // 16px
         'body-sm': ['0.875rem', { lineHeight: '1.5' }], // 14px
+        // Mobile-optimized sizes
+        'hero-mobile': ['2.5rem', { lineHeight: '1.1', letterSpacing: '0.05em' }], // 40px
+        'display-mobile': ['2rem', { lineHeight: '1.2', letterSpacing: '0.02em' }], // 32px
       },
       spacing: {
         // Consistent spacing scale

@@ -90,7 +90,7 @@ function ShareContent() {
             </p>
           </div>
 
-          <div className="grid grid-cols-5 gap-3 mb-8">
+          <div className="grid grid-cols-3 sm:grid-cols-5 gap-2 sm:gap-3 mb-8">
             <button
               onClick={() => handleShare('twitter')}
               className="aspect-square bg-dark-blue rounded-lg hover:opacity-80 transition-opacity flex items-center justify-center"

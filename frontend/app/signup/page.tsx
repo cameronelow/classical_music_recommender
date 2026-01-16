@@ -72,12 +72,12 @@ function SignUpForm() {
 
   return (
     <div className="min-h-screen flex flex-col">
-      <header className="w-full py-2 px-16">
+      <header className="w-full py-2 px-4 sm:px-8 md:px-16">
         <div className="w-full flex justify-center items-center relative min-h-header">
-          <Link href="/" className="text-light-cream text-hero transition-opacity hover:opacity-90">
+          <Link href="/" className="text-light-cream text-2xl sm:text-4xl md:text-hero transition-opacity hover:opacity-90 text-center">
             CLASSICAL VIBE
           </Link>
-          <div className="flex gap-3 absolute right-0">
+          <div className="flex gap-2 sm:gap-3 absolute right-0">
             <Link href="/login">
               <Button variant="header">Log In</Button>
             </Link>
@@ -90,7 +90,7 @@ function SignUpForm() {
 
       <main id="main-content" className="flex-1 flex items-center justify-center px-4">
         <Card className="w-full max-w-md">
-          <h1 className="text-display font-bold text-dark-blue mb-6 text-center">
+          <h1 className="text-2xl sm:text-3xl md:text-display font-bold text-dark-blue mb-6 text-center">
             Sign Up
           </h1>
 

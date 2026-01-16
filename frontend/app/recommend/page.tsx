@@ -130,10 +130,10 @@ function RecommendContent() {
 
       <main className="flex-1 flex items-center justify-center px-4">
         <Card className="w-full max-w-2xl text-center">
-          <h1 className="text-display font-bold text-dark-blue mb-2">
+          <h1 className="text-xl sm:text-2xl md:text-display font-bold text-dark-blue mb-2">
             {recommendation.title}
           </h1>
-          <h2 className="text-heading-xl text-dark-blue mb-6">
+          <h2 className="text-lg sm:text-xl md:text-heading-xl text-dark-blue mb-6">
             by {recommendation.composer}
           </h2>
 

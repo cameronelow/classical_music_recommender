@@ -87,7 +87,7 @@ export default function SavedPiecesPage() {
 
       <main className="flex-1 px-4 py-8">
         <div className="max-w-6xl mx-auto">
-          <h1 className="text-display text-light-cream text-center mb-12">
+          <h1 className="text-2xl sm:text-3xl md:text-display text-light-cream text-center mb-8 sm:mb-12">
             Saved Pieces
           </h1>
 
@@ -122,7 +122,7 @@ export default function SavedPiecesPage() {
                     🎵
                   </span>
                 </div>
-                <h2 className="text-heading-xl font-bold text-dark-blue mb-4">
+                <h2 className="text-lg sm:text-xl md:text-heading-xl font-bold text-dark-blue mb-4">
                   Your Collection Awaits
                 </h2>
                 <p className="text-body text-dark-blue mb-8">
@@ -134,13 +134,13 @@ export default function SavedPiecesPage() {
               </Card>
             </div>
           ) : (
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
               {pieces.map((piece) => (
                 <Card key={piece.id} className="flex flex-col">
-                  <h3 className="text-xl font-bold text-dark-blue mb-2">
+                  <h3 className="text-lg sm:text-xl font-bold text-dark-blue mb-2">
                     {piece.title}
                   </h3>
-                  <p className="text-lg text-dark-blue mb-4">
+                  <p className="text-base sm:text-lg text-dark-blue mb-4">
                     by {piece.composer}
                   </p>
                   <div className="flex-1">

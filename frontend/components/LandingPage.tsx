@@ -31,7 +31,7 @@ export default function LandingPage() {
 
       <main id="main-content" className="flex-1 flex flex-col items-center justify-center px-4">
         <div className="flex flex-col items-center text-center max-w-xl w-full">
-          <h1 className="text-light-cream text-hero mb-12 whitespace-nowrap">
+          <h1 className="text-light-cream text-3xl sm:text-5xl md:text-hero mb-8 sm:mb-12">
             What&apos;s your vibe today?
           </h1>
 
