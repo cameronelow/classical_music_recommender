@@ -274,7 +274,7 @@ class SemanticSearchConfig(BaseModel):
         description="Default number of search results to return"
     )
     min_similarity_threshold: float = Field(
-        default=0.25,
+        default=0.15,
         ge=0.0,
         le=1.0,
         description="Minimum similarity score to include in results (balanced to allow good matches while filtering weak ones)"

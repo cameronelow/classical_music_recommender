@@ -24,8 +24,11 @@ export async function updateSession(request: NextRequest) {
     }
   )
 
-  // Refreshing the auth token and get user
-  const { data: { user } } = await supabase.auth.getUser()
+  // Use getSession() (local cookie read, no network call) for routing decisions.
+  // getUser() (network call to Supabase) is reserved for server components that
+  // need to securely verify the user — doing it here times out the Edge middleware.
+  const { data: { session } } = await supabase.auth.getSession()
+  const user = session?.user ?? null
 
   // Protected routes that require authentication
   const protectedRoutes = ['/profile', '/saved', '/share']
