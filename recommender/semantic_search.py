@@ -828,7 +828,7 @@ class SemanticSearchEngine:
             ]
             if len(composer) > 0 and 'period' in composer.columns:
                 period = composer.iloc[0]['period']
-                if period and period.lower() in query_lower:
+                if isinstance(period, str) and period.lower() in query_lower:
                     reasons.append(f"{period} period")
                     period_match = True
 
@@ -872,7 +872,7 @@ class SemanticSearchEngine:
 
         # Add work type (include symphony/concerto if we don't have much else)
         work_type = None
-        if work.get('work_type'):
+        if isinstance(work.get('work_type'), str):
             # If we have very few reasons, include all work types
             # Otherwise only include distinctive ones
             work_type_lower = work['work_type'].lower()
@@ -880,7 +880,7 @@ class SemanticSearchEngine:
                 work_type = work_type_lower
 
         # Add period context if available
-        if period and not period_match:
+        if isinstance(period, str) and not period_match:
             reasons.append(f"{period} era")
 
         # Use formatter to create natural explanation
