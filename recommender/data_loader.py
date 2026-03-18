@@ -156,7 +156,7 @@ class MusicDataset:
             List of tag strings
         """
         work_tags = self.tags[self.tags['work_id'] == work_id]['tag'].tolist()
-        return work_tags
+        return [t for t in work_tags if isinstance(t, str)]
 
     def get_composer_name(self, composer_id: Optional[str]) -> str:
         """Get composer name by ID.
