@@ -775,10 +775,10 @@ class SemanticSearchEngine:
         # Check if key mood matches query (exact match)
         # Also check title for additional keys (handles multi-work collections)
         primary_key = work.get('key')
-        all_keys = [primary_key] if primary_key else []
+        all_keys = [primary_key] if isinstance(primary_key, str) else []
 
         # Extract additional keys from title (e.g., "Partita no. 5 in G major / Partita no. 6 in E minor")
-        if work.get('title'):
+        if isinstance(work.get('title'), str):
             title = work['title']
             # Look for key patterns like "in E minor", "in G major", etc.
             import re
@@ -791,7 +791,7 @@ class SemanticSearchEngine:
         # Check each key for matches
         # First check if query explicitly mentions the key (e.g., "e minor", "g major")
         for key in all_keys:
-            if key and key.lower() in query_lower:
+            if isinstance(key, str) and key.lower() in query_lower:
                 # Direct key match in query
                 key_moods = self.description_generator._get_key_moods(key)
                 if key_moods:
