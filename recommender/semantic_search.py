@@ -740,13 +740,17 @@ class SemanticSearchEngine:
         # Generate explanation
         explanation = self._generate_explanation(work, query, tags)
 
+        raw_work_type = work.get('work_type')
+        raw_key = work.get('key')
+        raw_period = period
+
         return SemanticSearchResult(
             work_id=work_id,
             title=work['title'],
             composer=composer_name,
-            work_type=work.get('work_type'),
-            key=work.get('key'),
-            period=period,
+            work_type=raw_work_type if isinstance(raw_work_type, str) else None,
+            key=raw_key if isinstance(raw_key, str) else None,
+            period=raw_period if isinstance(raw_period, str) else None,
             similarity_score=similarity_score,
             rank=rank,
             explanation=explanation,
