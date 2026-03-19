@@ -186,7 +186,8 @@ class ExplanationFormatter:
         moods = components['moods'][:2]  # Limit to 2 moods
         tags = components['tags'][:3]  # Limit to 3 tags
         period = components['period']
-        work_type = components['work_type'] or work.get('work_type')
+        raw_work_type = components['work_type'] or work.get('work_type')
+        work_type = raw_work_type if isinstance(raw_work_type, str) else None
 
         # Build mood + key phrase if available
         mood_key_phrase = None
