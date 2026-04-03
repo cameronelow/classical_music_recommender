@@ -29,7 +29,7 @@ export default function Header() {
 
   return (
     <header className="w-full py-4 px-4 sm:px-8 md:px-16 relative z-10">
-      <div className="w-full flex justify-center items-center relative min-h-header">
+      <div className="w-full flex flex-col items-center gap-2 sm:flex-row sm:justify-center sm:relative sm:min-h-header">
         <Link
           href="/"
           className="text-light-cream text-2xl sm:text-4xl md:text-hero transition-opacity hover:opacity-90 text-center"
@@ -38,7 +38,7 @@ export default function Header() {
           CLASSICAL VIBE
         </Link>
 
-        <div className="flex gap-2 sm:gap-3 absolute right-0">
+        <div className="flex gap-2 sm:gap-3 sm:absolute sm:right-0">
           {mounted && isAuthenticated ? (
             <>
               <Link href="/profile">
