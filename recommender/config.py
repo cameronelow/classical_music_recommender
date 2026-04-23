@@ -19,11 +19,12 @@ class FeatureWeights(BaseModel):
     Weights are normalized internally, so absolute values don't matter -
     only relative proportions.
 
-    Design decision: Composer gets highest weight because "more Bach" is
-    usually what users want. Period is second because era similarity matters
-    more than specific instrumentation for classical music.
+    Design decision: Composer is weighted higher than other features because
+    composer preference matters, but not so high that all recommendations
+    come from the same composer. Period is second because era similarity
+    matters more than specific instrumentation for classical music.
     """
-    composer: float = Field(default=5.0, description="Composer similarity weight")
+    composer: float = Field(default=2.5, description="Composer similarity weight")
     period: float = Field(default=3.0, description="Period/era similarity weight")
     work_type: float = Field(default=2.0, description="Work type (symphony, concerto, etc.) weight")
     key: float = Field(default=1.0, description="Musical key similarity weight")
